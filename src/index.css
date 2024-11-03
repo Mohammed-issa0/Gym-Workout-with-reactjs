@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  overflow-x: hidden;
+}
+.hero {
+  background: linear-gradient(
+      to right,
+      rgba(153, 27, 27, 0.2),
+      rgba(69, 10, 10, 0.2)
+    ),
+    url(/src/assets/bg.jpg);
+  background-size: cover;
+}
+span {
+  font-family: inherit;
+  font-weight: inherit;
+}
+.blueShadow {
+  box-shadow: 3px 3px 0 0 #fe5252;
+}
+
+.blueShadow:hover {
+  transform: translate(3px, 3px);
+  box-shadow: 1px 1px 0 0 #fe5252;
+}
+::selection {
+  background: white;
+  color: #0f172a;
+}
+.mainSection {
+  background: linear-gradient(
+      to right,
+      rgba(153, 27, 27, 0.2),
+      rgba(69, 10, 10, 0.2)
+    ),
+    url(/src/assets/bg2.jpg);
+  background-size: cover;
+}
+.lastSec {
+  background-image: url("./assets/bg3.jpg");
+
+  background: linear-gradient(
+      to right,
+      rgba(153, 27, 27, 0.2),
+      rgba(69, 10, 10, 0.2)
+    ),
+    url(/src/assets/bg3.jpg);
+  background-size: cover;
+  /* background-repeat: no-repeat; */
+}
